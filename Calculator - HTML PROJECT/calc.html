@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALC</title>
+</head>
+<body align="center" >  
+    <h1> CALCULATOR </h1>  
+    <table cellspacing="2" align="center" cellpadding="10" border="0">  
+    <tr><td> Enter Value 1</td>   
+    <td><input type="text" placeholder="Enter Value 1" id="n1"></td></tr>  
+    <tr><td>Enter Value 2</td>  
+    <td><input type="text" placeholder="Enter Value 2" id="e1"></td></tr>
+    <tr><td>Select Operation </td> 
+        <td>
+        <select id="opt">
+            <option>select</option>
+            <option>ADDITION +</option>
+            <option>SUBTRACTION -</option>
+            <option>MULTIPLICATION *</option>
+            <option>DIVISION /</option>
+            <option>MODULUS %</option>
+            <option>EXPONENT **</option>
+
+        </select> 
+    </td>
+    <tr><td>Result</td>  
+    <td><input type="text" placeholder="Result" id="ans" readonly></td></tr> 
+    <tr >
+        <td ><input type="button" value="CALCULATE"   onClick="calc()"  /> </td>
+        <td ><input type="button" value="CLEAR"   onclick="cl()"  /> </td>
+    </tr> 
+    </table> 
+    
+    <script type="text/javascript" src="functions.js"> 
+    </script>
+    <div>
+        <a href="index.html"> Logout </a>
+    </div>
+
+</body>
+</html>

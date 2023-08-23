@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+<title> FINDING AN SUM OF FIRST "N" NUMBERS </title> 
+<link rel="icon" href="C:\Users\santhosh.kumar\Pictures\web\icons8-calculator-64.png"/> 
+</head>  
+<body align="center" > 
+<style>
+  body {background-color: powderblue;}
+  h1 {color: black;}
+  input {color: blue;}
+</style>
+<h1> FINDING AN SUM OF FIRST "N" NUMBERS</h1>
+<table cellspacing="2" align="center" cellpadding="8" border="0">  
+<tr><td> Enter ANY number</td>   
+<td><input type="text" placeholder="Enter ANY number" id="n1"></td></tr>  
+<tr><td> Result</td> 
+<td id="p1"></td>     
+</table>
+<input type="button" value="FIND THE SUM" onClick="sum()" style="background-color:red;"/>    
+<script>  
+function sum(){  
+var n=parseInt(document.getElementById("n1").value);
+var sum=0;
+for(var i=0;i<=n;i++){
+    sum+=i;
+} 
+document.getElementById('p1').innerHTML="THE SUM OF 0 TO "+ n + "is "+sum;
+}
+</script>  
+</body>  
+</html> 

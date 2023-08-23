@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>register form</title>
+</head>
+<body>
+<form form="register_form" onsubmit="submit_form()">
+<label style="font-family:Arial;">Name</label>
+<input type="text"/><br><br>
+<label style="font-family:Arial;font-color:red">Email</label>
+<input type="email"/><br><br>
+<label style="font-family:Arial;">Password</label>
+<input type="password" minlength="8"/><br><br>
+<fieldset>
+<legend style="font-family:Arial;">Refferer</legend>
+<input type="radio"/>
+<label style="font-family:Arial;">Tv</label><br>
+<input type="radio"/>
+<label style="font-family:Arial;">Internet</label><br>
+<input type="radio" checked />
+<label style="font-family:Arial;">None</label><br>
+</fieldset><br><br>
+<input type="checkbox"/>
+<label style="font-family:Arial;">I accept terms services</label><br><br>
+<input type="button" value="Register" onClick="create()"/>
+
+</form>
+
+<script type="text/javascript">  
+function submit_form(){  
+alert("Login successfully");  
+}  
+function create(){  
+alert("Login successfully");   
+}  
+</script>
+</body>
+</html>

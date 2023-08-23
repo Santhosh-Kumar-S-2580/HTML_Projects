@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+<title> Calc</title> 
+<link rel="icon" href="C:\Users\santhosh.kumar\Pictures\web\icons8-calculator-64.png"/> 
+</head>  
+<body align="center" > 
+<style>
+  body {background-color: powderblue;}
+  h1 {color: black;}
+  input {color: blue;}
+</style>
+<img src="C:\Users\santhosh.kumar\Pictures\web\icons8-calculator-64.png"/><h1> CALCULATOR</h1>
+<table cellspacing="2" align="center" cellpadding="8" border="0">  
+<tr><td> Enter your first number</td>   
+<td><input type="text" placeholder="Enter your first number" id="n1"></td></tr>  
+<tr><td>Enter your second number </td>  
+<td><input type="text" placeholder="Enter your second number" id="n2"></td></tr>  
+<tr><td> answer</td> 
+<td><input type="text"  placeholder="Answer will be shown" id="p1"></td></tr>    
+</table>
+<input type="button" value="ADD" onClick="add()" style="background-color:red;"/>   |   <input type="button" value="Subtraction" onClick="sub()"style="background-color:green;"/>    |     <input type="button" value="Mulitiply" onClick="mul()" style="background-color:yellow;"/>   |    <input type="button" value="Division" onClick="div()" style="background-color:yellow;"/> | <input type="button" value="exponent" onClick="expo()" style="background-color:teal;"/>  
+<script>  
+function add(){  
+var n=parseInt(document.getElementById("n1").value);  
+var e=parseInt(document.getElementById("n2").value); 
+var r=document.getElementById("p1");
+r.value=n + e;
+document.getElementById('p1').innerHTML='ans is'+r;
+}
+function sub(){  
+var n=parseInt(document.getElementById("n1").value);  
+var e=parseInt(document.getElementById("n2").value);
+var r=document.getElementById("p1");
+r.value=n - e;
+document.getElementById('p1').innerHTML='ans is'+r;
+}
+function mul(){  
+var n=parseInt(document.getElementById("n1").value);  
+var e=parseInt(document.getElementById("n2").value);
+var r=document.getElementById("p1");
+r.value=n * e;
+document.getElementById('p1').innerHTML='ans is'+r;
+}
+function div(){  
+var n=parseInt(document.getElementById("n1").value);  
+var e=parseInt(document.getElementById("n2").value);
+var r=document.getElementById("p1");
+r.value=n / e;
+document.getElementById('p1').innerHTML='ans is'+r;
+}
+function expo(){  
+var n=parseInt(document.getElementById("n1").value);  
+var e=parseInt(document.getElementById("n2").value);
+var r=document.getElementById("p1");
+r.value=n ** e;
+document.getElementById('p1').innerHTML='ans is'+r;
+}
+</script>
+<footer>
+</footer>  
+</body>  
+</html> 

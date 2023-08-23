@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+<title> FINDING AN ODD/EVEN </title> 
+<link rel="icon" href="C:\Users\santhosh.kumar\Pictures\web\icons8-calculator-64.png"/> 
+</head>  
+<body align="center" > 
+<style>
+  body {background-color: powderblue;}
+  h1 {color: black;}
+  input {color: blue;}
+</style>
+<img src="icons8-calculator-64.png"/><h1> FINDING AN ODD/EVEN</h1>
+<table cellspacing="2" align="center" cellpadding="8" border="0">  
+<tr><td> Enter ANY number</td>   
+<td><input type="text" placeholder="Enter ANY number" id="n1"></td></tr>  
+<tr><td> Result</td> 
+<td id="p1"></td>     
+</table>
+<input type="button" value="FIND" onClick="eo()" style="background-color:red;"/>    
+<script>  
+function eo(){  
+var n=parseInt(document.getElementById("n1").value); 
+if(n == 0)
+{
+ document.getElementById('p1').innerHTML="THE ZERO IS NEITHER EVEN NOR ODD";
+}
+else if(n%2 == 0)
+{
+ document.getElementById('p1').innerHTML="THE GIVEN NUMBER " +n+ "is EVEN";
+}
+else
+{
+ document.getElementById('p1').innerHTML="THE GIVEN NUMBER " +n+ "is ODD";
+}
+}
+</script>  
+</body>  
+</html> 
